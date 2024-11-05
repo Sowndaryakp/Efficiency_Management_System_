@@ -2,16 +2,15 @@
 import React, { useState } from 'react';
 import { Home, Plus, BarChart, Search, Upload, FileText, Users, BarChart2, Bell, Menu, ChevronRight, Eye, Files, FileClock, Award, Handshake, CalendarClock, FileStack, ChartNoAxesCombined, ChevronDown, UserRoundPlus, Hourglass } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
-import buhlerlogo from '../assets/buhlerpvt.svg';
-import buhlerlogo1 from '../assets/buh.png';
+import logo from '../assets/buhlerpvt.svg';
+import logo1 from '../assets/buh.png';
 import { useUser } from './UserContext';
-import '../assets/css/sidebar.css'
 
 const Logo = ({ isCollapsed }) => (
   <div className={`flex items-center px-4 py-5 ${isCollapsed ? 'justify-center' : ''}`}>
     <div className="h-8 w-8 rounded-full bg-gradient-to-r from-white to-white flex items-center justify-center text-white font-bold text-xl">
       <img
-        src={buhlerlogo1}
+        src={logo}
         alt="Logo"
         style={{
           height: '100%',
@@ -32,7 +31,7 @@ const Logo = ({ isCollapsed }) => (
           }}
         >
           <img
-            src={buhlerlogo1}
+            src={logo}
             alt="Logo"
             style={{
               height: '100%',
@@ -49,13 +48,13 @@ const Logo = ({ isCollapsed }) => (
 const MenuItem = ({ icon: Icon, label, onClick, isActive, hasNotification, notificationCount, isCollapsed, children }) => (
   <div className={`flex flex-col`}>
     <div
-      className={`flex items-center px-4 py-2 ${isActive ? 'bg-persian-green-700' : 'hover:bg-big-stone-600'} rounded-lg cursor-pointer`}
+      className={`flex items-center px-4 py-2 ${isActive ? 'bg-gray-700' : 'hover:bg-big-stone-600'} rounded-lg cursor-pointer`}
       onClick={onClick}
     >
-      <Icon size={20} className={`${isActive ? 'text-white' : 'text-persian-green-500'}`} />
+      <Icon size={20} className={`${isActive ? 'text-white' : 'text-gray-400'}`} />
       {!isCollapsed && (
         <>
-          <span className={`ml-3 ${isActive ? 'text-white' : 'text-persian-green-900'}`}>{label}</span>
+          <span className={`ml-3 ${isActive ? 'text-white' : 'text-gray-300'}`}>{label}</span>
           {hasNotification && (
             <div className="ml-auto bg-green-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
               {notificationCount}
@@ -73,7 +72,7 @@ const MenuItem = ({ icon: Icon, label, onClick, isActive, hasNotification, notif
 );
 
 const Sidebar = () => {
-  const [isCollapsed, setIsCollapsed] = useState(false);
+  const [isCollapsed, setIsCollapsed] = useState(true);
   const [activeItem, setActiveItem] = useState('admin_dashboard');
   const [isCasualLabourOpen, setIsCasualLabourOpen] = useState(false); // New state for Casual Labour dropdown
   const navigate = useNavigate();
@@ -93,13 +92,12 @@ const Sidebar = () => {
     setIsCasualLabourOpen((prev) => !prev); // Toggle Casual Labour dropdown
   };
 
-
   return (
     <div
-      className={`sidebar-shadow bg-white text-persian-green-950 font-bold h-full flex flex-col transition-all duration-300 ease-in-out ${isCollapsed ? 'w-16' : 'w-64'}`}
+      className={`bg-big-stone-800 text-white h-full flex flex-col transition-all duration-300 ease-in-out ${isCollapsed ? 'w-16' : 'w-64'}`}
     >
       <div className="flex justify-between items-center p-4">
-        <button onClick={toggleSidebar} className="text-persian-green focus:outline-none">
+        <button onClick={toggleSidebar} className="text-white focus:outline-none">
           {isCollapsed ? <ChevronRight size={24} /> : <Menu size={24} />}
         </button>
       </div>
@@ -117,8 +115,8 @@ const Sidebar = () => {
               icon={Users} 
               label={
                 <span className="flex items-center">
-                  <span className={`ml-3 ${isCasualLabourOpen ? 'text-white' : 'text-persian-green-300'}`}>Employee Management</span>
-                  <ChevronDown size={16} className={`ml-1 ${isCasualLabourOpen ? 'text-white' : 'text-persian-green-300'}`} />
+                  <span className={`ml-3 ${isCasualLabourOpen ? 'text-white' : 'text-gray-300'}`}>Employee Management</span>
+                  <ChevronDown size={16} className={`ml-1 ${isCasualLabourOpen ? 'text-white' : 'text-gray-300'}`} />
                 </span>
               } 
               isActive={activeItem === 'casual_labour' || isCasualLabourOpen}

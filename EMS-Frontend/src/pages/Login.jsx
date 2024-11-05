@@ -41,9 +41,9 @@ const Login = ({ setIsAuthenticated, setRole }) => { // Add setRole as a prop
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen p-4" style={{ background: 'linear-gradient(to bottom, #effefb, #c7fff5, #90ffea, #51f7df, #1de4cd)' }} p-4>
+    <div className="flex items-center justify-center min-h-screen p-4" style={{ background: 'linear-gradient(to bottom, #f5f7fa, #eaeef4, #d0dbe7, #a6bcd3, #7799b9)' }} p-4>
       <div className="bg-white p-8 rounded shadow-md w-full max-w-md ">
-        <h2 className="text-2xl mb-6 text-center text-persian-green-90">Login</h2>
+        <h2 className="text-2xl mb-6 text-center text-big-stone-90">Login</h2>
         <Input 
           placeholder="Username" 
           className="mb-4" 
@@ -57,9 +57,9 @@ const Login = ({ setIsAuthenticated, setRole }) => { // Add setRole as a prop
           onChange={(e) => setPassword(e.target.value)} 
         />
         {error && <p className="text-red-500 mb-4">{error}</p>}
-        <Button className="text-white hover:text-persian-green-500 bg-persian-green-600 w-full" onClick={handleLogin}>Login</Button>
+        <Button className="text-white hover:text-big-stone-500 bg-big-stone-600 w-full" onClick={handleLogin}>Login</Button>
         <div className="text-center mt-4">
-          <Link to="/signup" className="text-persian-green-500 hover:text-persian-green-800">Don't have an account? Signup</Link>
+          <Link to="/signup" className="text-big-stone-500 hover:text-big-stone-800">Don't have an account? Signup</Link>
         </div>
       </div>
     </div>

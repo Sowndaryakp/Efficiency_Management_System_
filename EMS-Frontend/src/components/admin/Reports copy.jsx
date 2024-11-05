@@ -73,7 +73,7 @@ const Reports = () => {
             <Filter className="w-4 h-4 mr-2" />
             Filters
           </button>
-          <button className="flex items-center px-4 py-2 bg-persian-green-600 text-white rounded-lg hover:bg-persian-green-700">
+          <button className="flex items-center px-4 py-2 bg-big-stone-600 text-white rounded-lg hover:bg-big-stone-700">
             <Download className="w-4 h-4 mr-2" />
             Export
           </button>
@@ -89,7 +89,7 @@ const Reports = () => {
               onClick={() => setActiveTab(tab)}
               className={`py-2 px-4 text-sm font-medium ${
                 activeTab === tab
-                  ? 'border-b-2 border-persian-green-500 text-persian-green-600'
+                  ? 'border-b-2 border-big-stone-500 text-big-stone-600'
                   : 'text-gray-500 hover:text-gray-700'
               }`}
             >
@@ -193,7 +193,7 @@ const Reports = () => {
                       <td className="px-6 py-4 whitespace-nowrap">
                         <span className={`px-2 py-1 inline-flex text-xs leading-5 font-semibold rounded-full ${
                           row.status === 'Active' ? 'bg-green-100 text-green-800' :
-                          row.status === 'Completed' ? 'bg-persian-green-100 text-persian-green-800' :
+                          row.status === 'Completed' ? 'bg-big-stone-100 text-big-stone-800' :
                           'bg-yellow-100 text-yellow-800'
                         }`}>
                           {row.status}

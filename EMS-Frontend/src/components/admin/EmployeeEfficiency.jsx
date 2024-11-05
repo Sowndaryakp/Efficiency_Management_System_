@@ -83,7 +83,7 @@ const EmployeeEfficiency = () => {
             <button
               key={range.label}
               onClick={() => setSelectedRange(range)}
-              className={`mr-2 px-4 py-2 rounded ${selectedRange.label === range.label ? 'bg-persian-green-500 text-white' : 'bg-gray-200'}`}
+              className={`mr-2 px-4 py-2 rounded ${selectedRange.label === range.label ? 'bg-big-stone-500 text-white' : 'bg-gray-200'}`}
             >
               {range.label}
             </button>

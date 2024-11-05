@@ -304,7 +304,7 @@ const EfficiencyComputation = () => {
       key: 'actions',
       render: (_, record) => (
         <Space>
-          <Button className='text-white bg-persian-green-600' onClick={() => showModal(record)}>Edit</Button>
+          <Button className='text-white bg-big-stone-600' onClick={() => showModal(record)}>Edit</Button>
           <Button onClick={() => handleDelete(record.ecCode)} danger>Delete</Button>
         </Space>
       ),
@@ -323,10 +323,10 @@ const EfficiencyComputation = () => {
               direction="horizontal" 
               style={{ width: '100%', justifyContent: 'space-between', flexWrap: 'wrap', gap: '8px' }} // Adjusted gap
             >
-              <Button className='text-white bg-persian-green-600' icon={<PlusOutlined />} onClick={() => showModal(null)} style={{ width: '100%' }}>
+              <Button className='text-white bg-big-stone-600' icon={<PlusOutlined />} onClick={() => showModal(null)} style={{ width: '100%' }}>
                 Add
               </Button>
-              <Button className='text-white bg-persian-green-600' icon={<ExportOutlined />} onClick={exportToExcel} style={{ width: '100%' }}>
+              <Button className='text-white bg-big-stone-600' icon={<ExportOutlined />} onClick={exportToExcel} style={{ width: '100%' }}>
                 Export to Excel
               </Button>
               <Upload 

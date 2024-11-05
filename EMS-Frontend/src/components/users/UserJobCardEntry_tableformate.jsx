@@ -119,7 +119,7 @@ const JobCard = () => {
                 alt="Logo"
                 className="h-8 md:h-10 mr-2 mb-2 md:mb-0" // Added margin for spacing and adjusted for mobile
               /> */}
-              <h1 className="text-xl md:text-3xl font-bold text-center text-persian-green-950">Job Card for Technicians</h1> {/* Centered without fixed margin */}
+              <h1 className="text-xl md:text-3xl font-bold text-center text-big-stone-950">Job Card for Technicians</h1> {/* Centered without fixed margin */}
             </div>
           </div>
           <div className="text-right">
@@ -180,7 +180,7 @@ const JobCard = () => {
           <div className="overflow-x-auto">
             <table className="w-full border-collapse">
               <thead>
-                <tr className="bg-persian-green-50">
+                <tr className="bg-big-stone-50">
                   <th className="border p-2 text-left">Activity Code No</th>
                   <th className="border p-2 text-left">M/c Type</th>
                   <th className="border p-2 text-left">FWO No</th>
@@ -218,7 +218,7 @@ const JobCard = () => {
                 ))}
               </tbody>
             </table>
-            <button type="button" onClick={addProductionRow} className="mt-2 px-4 py-2 bg-persian-green-700 text-white rounded">Add Row</button>
+            <button type="button" onClick={addProductionRow} className="mt-2 px-4 py-2 bg-big-stone-700 text-white rounded">Add Row</button>
           </div>
         </div>
 
@@ -228,7 +228,7 @@ const JobCard = () => {
           <div className="overflow-x-auto">
             <table className="w-full border-collapse">
               <thead>
-                <tr className="bg-persian-green-50">
+                <tr className="bg-big-stone-50">
                   <th className="border p-2 text-left">Rework</th>
                   <th className="border p-2 text-left">Cleaning / Workhead org</th>
                   <th className="border p-2 text-left">Material Shortage</th>
@@ -282,7 +282,7 @@ const JobCard = () => {
                 ))}
               </tbody>
             </table>
-            <button type="button" onClick={addDowntimeRow} className="mt-2 px-4 py-2 bg-persian-green-700 text-white rounded">Add Row</button>
+            <button type="button" onClick={addDowntimeRow} className="mt-2 px-4 py-2 bg-big-stone-700 text-white rounded">Add Row</button>
           </div>
         </div>
 
@@ -294,7 +294,7 @@ const JobCard = () => {
             <textarea 
               name="remarks" 
               {...register('jobDetails.remarks')} 
-              className="h-10 border-b border-persian-green-300 w-full"
+              className="h-10 border-b border-big-stone-300 w-full"
             />
           </div>
           <div className="flex-1 flex flex-col md:flex-row justify-around"> {/* Changed to flex-col for mobile */}
@@ -308,7 +308,7 @@ const JobCard = () => {
               <button 
                 type="button" 
                 onClick={() => setShowModal(true)} 
-                className="mb-2 px-4 py-2 bg-persian-green-200 rounded"
+                className="mb-2 px-4 py-2 bg-big-stone-200 rounded"
               >
                 Add Signature
               </button>
@@ -324,7 +324,7 @@ const JobCard = () => {
               <button 
                 type="button" 
                 onClick={() => setShowSubEngrModal(true)} 
-                className="mb-2 px-4 py-2 bg-persian-green-200 rounded"
+                className="mb-2 px-4 py-2 bg-big-stone-200 rounded"
               >
                 Add Signature
               </button>
@@ -336,7 +336,7 @@ const JobCard = () => {
 
         {/* Modal for Signature Input */}
         {showModal && (
-          <div className="fixed inset-0 flex items-center justify-center bg-persian-green-500 bg-opacity-50 p-4">
+          <div className="fixed inset-0 flex items-center justify-center bg-big-stone-500 bg-opacity-50 p-4">
             <div className="bg-white p-6 rounded shadow-lg">
               <h2 className="text-lg font-bold mb-4">Add Signature</h2>
               <input 
@@ -355,14 +355,14 @@ const JobCard = () => {
                 <button 
                   type="button" 
                   onClick={handleOk} 
-                  className="px-4 py-2 bg-persian-green-600 text-white rounded"
+                  className="px-4 py-2 bg-big-stone-600 text-white rounded"
                 >
                   OK
                 </button>
                 <button 
                   type="button" 
                   onClick={() => setShowModal(false)} 
-                  className="ml-2 px-4 py-2 bg-persian-green-200 rounded"
+                  className="ml-2 px-4 py-2 bg-big-stone-200 rounded"
                 >
                   Cancel
                 </button>
@@ -372,7 +372,7 @@ const JobCard = () => {
         )}
 
         {showSubEngrModal && (
-          <div className="fixed inset-0 flex items-center justify-center bg-persian-green-500 bg-opacity-50">
+          <div className="fixed inset-0 flex items-center justify-center bg-big-stone-500 bg-opacity-50">
             <div className="bg-white p-6 rounded shadow-lg">
               <h2 className="text-lg font-bold mb-4">Add Signature of the Sub/Engr</h2>
               <input 
@@ -391,14 +391,14 @@ const JobCard = () => {
                 <button 
                   type="button" 
                   onClick={handleSubEngrOk} 
-                  className="px-4 py-2 bg-persian-green-600 text-white rounded"
+                  className="px-4 py-2 bg-big-stone-600 text-white rounded"
                 >
                   OK
                 </button>
                 <button 
                   type="button" 
                   onClick={() => setShowSubEngrModal(false)} 
-                  className="ml-2 px-4 py-2 bg-persian-green-200 rounded"
+                  className="ml-2 px-4 py-2 bg-big-stone-200 rounded"
                 >
                   Cancel
                 </button>
@@ -408,10 +408,10 @@ const JobCard = () => {
         )}
 
         <div className="mt-4 flex flex-col md:flex-row justify-between">
-          <p className="text-sm text-persian-green-600">Document Code: FIE/028/0</p>
+          <p className="text-sm text-big-stone-600">Document Code: FIE/028/0</p>
           <div className="space-x-0 md:space-x-4 flex flex-col md:flex-row">
-            <button type="submit" className="px-6 py-2 bg-persian-green-600 text-white rounded">Complete</button>
-            <button type="button" className="px-6 py-2 bg-persian-green-200 rounded">Cancel</button>
+            <button type="submit" className="px-6 py-2 bg-big-stone-600 text-white rounded">Complete</button>
+            <button type="button" className="px-6 py-2 bg-big-stone-200 rounded">Cancel</button>
           </div>
         </div>
       </form>

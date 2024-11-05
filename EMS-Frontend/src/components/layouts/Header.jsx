@@ -4,9 +4,6 @@ import { useUser } from '../UserContext'; // Import the UserContext
 import cmti from '../../assets/cmti.png';
 import buhler from '../../assets/buhler.png';
 import cmtilogo from '../../assets/cmti_logo.png'
-import buhler1 from '../../assets/buh.png';
-import  '../../assets/css/header.css';
-
 
 const Header = () => {
   const { user, setUser } = useUser(); // Get the user data and setter function from the context
@@ -25,15 +22,14 @@ const Header = () => {
   };
 
   return (
-    <header className="header-shadow relative flex items-center justify-between">
-      {/* <header className="bg-gradient-to-r from-persian-green-50 to-persian-green-50 shadow-sm relative flex items-center justify-between"></header> */}
+    <header className="bg-gradient-to-r from-big-stone-100 to-big-stone-50 shadow-sm relative flex items-center justify-between">
       <div className="container mx-auto px-6 py-3">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-4 ">
             {/* Logo container */}
           <div className="">
             <img
-            src={buhler1}
+            src={buhler}
             alt="buhler Logo"
             style={{
               overflow: 'auto',
@@ -46,7 +42,7 @@ const Header = () => {
 
           <div className="flex items-center justify-end ml-auto flex-1">
           <img
-            src={buhler1}
+            src={buhler}
             alt="buhler Logo"
             style={{
               overflow: 'auto',

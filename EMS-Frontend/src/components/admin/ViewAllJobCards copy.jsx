@@ -474,7 +474,7 @@ const rowClassName = (record, index) => {
                 </Form>
               </Space> */}
                <Space>
-              <Button className='text-white bg-persian-green-600' icon={<ExportOutlined />} onClick={exportToExcel}>
+              <Button className='text-white bg-big-stone-600' icon={<ExportOutlined />} onClick={exportToExcel}>
                 Export to Excel
               </Button>
             </Space>

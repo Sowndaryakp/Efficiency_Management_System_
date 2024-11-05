@@ -519,7 +519,7 @@ const handleModalCancel = () => {
       key: 'actions',
       render: (text, record) => (
         <Space size="middle">
-          <Button className='text-white bg-persian-green-600' onClick={() => handleEditClick(record)}>Edit</Button>
+          <Button className='text-white bg-big-stone-600' onClick={() => handleEditClick(record)}>Edit</Button>
           <Button onClick={() => handleDelete(record.ecNo)} danger>Delete</Button>
         </Space>
       ),
@@ -625,10 +625,10 @@ const paginationOptions = {
                 </Form>
               </Space> */}
                <Space>
-               <Button className='text-white bg-persian-green-600' icon={<PlusOutlined />} onClick={() => showModal(null)} style={{ width: '100%' }}>
+               <Button className='text-white bg-big-stone-600' icon={<PlusOutlined />} onClick={() => showModal(null)} style={{ width: '100%' }}>
                 Add 
               </Button>
-              <Button className='text-white bg-persian-green-600' icon={<ExportOutlined />} onClick={exportToExcel}>
+              <Button className='text-white bg-big-stone-600' icon={<ExportOutlined />} onClick={exportToExcel}>
                 Export to Excel
               </Button>
               <Upload 

@@ -95,13 +95,13 @@ const UserDashboard = () => {
 
   return (
     // <div className="flex flex-col items-center h-full p-4">
-    //   <h1 className="text-3xl font-bold mb-4 text-center text-persian-green-950">User Dashboard</h1>
+    //   <h1 className="text-3xl font-bold mb-4 text-center text-big-stone-950">User Dashboard</h1>
       
     //   <div className="flex flex-col md:flex-row md:justify-center md:space-x-4 space-y-4 md:space-y-0 mt-4 w-full max-w-4xl">
         
     //     {/* Job Card Status Summary */}
     //     <div className="p-4 border rounded-lg shadow-md bg-white bg-gray-50 flex-1 min-w-0">
-    //       <div className="bg-persian-green-800 text-white p-2 rounded-lg">
+    //       <div className="bg-big-stone-800 text-white p-2 rounded-lg">
     //         <h2 className="text-xl font-bold text-center">Job Card Status Summary</h2>
     //       </div>
     //       <div className="flex justify-center items-center p-4" style={{ height: isMobile ? '200px' : '250px', width: '100%' }}>
@@ -116,7 +116,7 @@ const UserDashboard = () => {
 
     //     {/* Efficiency Summary */}
     //     <div className="p-4 border rounded-lg shadow-md bg-white bg-gray-50 flex-1 min-w-0">
-    //       <div className="bg-persian-green-800 text-white p-2 rounded-lg">
+    //       <div className="bg-big-stone-800 text-white p-2 rounded-lg">
     //         <h2 className="text-xl font-bold text-center">Efficiency Summary</h2>
     //       </div>
     //       <div className="flex justify-center items-center p-4" style={{ height: isMobile ? '200px' : '250px', width: '100%' }}>
@@ -132,14 +132,14 @@ const UserDashboard = () => {
     //   </div>
     // </div>
 
-    <div className="flex flex-col items-center bg-gray-100 w-full h-full p-4">
-    <h1 className="text-3xl font-bold mb-4 text-center text-persian-green-950">User Dashboard</h1>
+    <div className="flex flex-col items-center h-full p-4">
+    <h1 className="text-3xl font-bold mb-4 text-center text-big-stone-950">User Dashboard</h1>
     
     <div className="flex flex-col md:flex-row md:justify-center md:space-x-4 space-y-4 md:space-y-0 mt-4 w-full max-w-4xl">
       
       {/* Job Card Status Summary */}
       <div className="p-4 border rounded-lg shadow-md bg-white bg-gray-50 flex-1 min-w-0">
-        <div className="bg-persian-green-800 text-white p-2 rounded-lg">
+        <div className="bg-big-stone-800 text-white p-2 rounded-lg">
           <h2 className="text-xl font-semibold text-center">Job Card Status Summary</h2>
         </div>
         <div className="flex justify-center items-center p-4" style={{ height: isMobile ? '200px' : '250px', width: '100%' }}>
@@ -159,7 +159,7 @@ const UserDashboard = () => {
 
       {/* Efficiency Summary */}
       <div className="p-4 border rounded-lg shadow-md bg-white bg-gray-50 flex-1 min-w-0">
-        <div className="bg-persian-green-800 text-white p-2 rounded-lg">
+        <div className="bg-big-stone-800 text-white p-2 rounded-lg">
           <h2 className="text-xl font-semibold text-center">Efficiency Summary</h2>
         </div>
         <div className="flex justify-center items-center p-4" style={{ height: isMobile ? '200px' : '250px', width: '100%' }}>

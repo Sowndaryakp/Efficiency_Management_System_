@@ -114,7 +114,7 @@ const ViewUserJobCards = () => {
 
   return (
     <div className="p-2">
-      <h1 className="text-xl md:text-3xl font-bold text-center text-persian-green-950 mb-4">View My Job Cards</h1>
+      <h1 className="text-xl md:text-3xl font-bold text-center text-big-stone-950 mb-4">View My Job Cards</h1>
       
       <Input 
         placeholder="Search by Name" 
