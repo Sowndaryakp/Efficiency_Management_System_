@@ -18,7 +18,7 @@ import StdHrs from './components/admin/StdHrs';
 import Reports from './components/admin/Reports';
 import Analytics from './components/admin/Analytics';
 import CasualLabourJobCardEntry from './components/admin/CasualLabourJobCardEntry';
-
+import { Link } from 'react-router-dom';
 import { Outlet } from 'react-router-dom';
 
 const App = () => {
@@ -27,7 +27,7 @@ const App = () => {
 
   return (
     <UserProvider>
-      <Router>
+        <Router basename="/efficiencymanagement">
         <Routes>
           <Route path="/login" element={<Login setIsAuthenticated={setIsAuthenticated} setRole={setRole} />} />
           <Route path="/signup" element={<Signup />} />

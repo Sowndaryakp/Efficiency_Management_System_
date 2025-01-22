@@ -4,6 +4,8 @@ import { useUser } from '../UserContext'; // Import the UserContext
 import cmti from '../../assets/cmti.png';
 import buhler from '../../assets/buhler.png';
 import cmtilogo from '../../assets/cmti_logo.png'
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+
 
 const Header = () => {
   const { user, setUser } = useUser(); // Get the user data and setter function from the context
@@ -117,10 +119,21 @@ const Header = () => {
                       </div>
                     )}
                     <div className="flex items-center justify-between w-full">
-                        <button onClick={handleLogout} className="px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 font-bold flex items-center">
+                        {/* <button onClick={handleLogout} className="px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 font-bold flex items-center">
                             <LogOut className="text-gray-400" size={20} />
                             <span className="ml-2">Logout</span>
-                        </button>
+                        </button> */}
+                         <Link
+                          to="/login"
+                          onClick={() => {
+                            setUser(null); // Clear user data
+                            localStorage.removeItem('access_token'); // Remove token
+                          }}
+                          className="px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 font-bold flex items-center"
+                        >
+                          <LogOut className="text-gray-400" size={20} />
+                          <span className="ml-2">Logout</span>
+                        </Link>
                         <button onClick={() => setIsUserMenuOpen(false)} className="px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 flex items-center">
                             <span className="ml-2">Cancel</span>
                         </button>

@@ -12,7 +12,7 @@ const Login = ({ setIsAuthenticated, setRole }) => { // Add setRole as a prop
 
   const handleLogin = () => {
     // Default credentials
-    const adminCredentials = { username: 'admin', password: 'admin' };
+    const adminCredentials = { username: 'cmti', password: 'cmti' };
     const userCredentials = { username: 'user', password: 'user' };
 
     if (!username || !password) {
